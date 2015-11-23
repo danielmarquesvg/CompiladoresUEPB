@@ -36,7 +36,7 @@ SKIP :
 |   < EOF_COMMENT: "//" (~["\n","\r"])* >
 }
 
-TOKEN : /* OPERADORES */
+TOKEN :
 {	< MAIS: "+" >
 |	< MENOS: "-" >
 |	< ASTERISCO: "*" >
@@ -44,10 +44,7 @@ TOKEN : /* OPERADORES */
 | 	< MENOR: "<" >
 | 	< NAO: "!" >
 | 	< IGUAL: "=" >
-}
-
-TOKEN : /* SEPARADORES */
-{	< ABRE_PARENTESES: "(" >
+| 	< ABRE_PARENTESES: "(" >
 |	< FECHA_PARENTESES: ")" >
 |	< ABRE_COLCHETE: "[" >
 |	< FECHA_COLCHETE: "]" >
@@ -56,41 +53,26 @@ TOKEN : /* SEPARADORES */
 | 	< PONTOVIRGULA: ";" >
 | 	< PONTO: "." >
 | 	< VIRGULA: "," >
-}
-
-TOKEN : /* OBJETOS */
-{	< CLASS: "class" >
+| 	< CLASS: "class" >
 | 	< STRING: "String" >
 | 	< INT: "int" >
 | 	< BOOLEAN: "boolean" >
 | 	< THIS: "this" >
-}
-
-TOKEN : /* CONDICIONAIS */
-{	< IF: "if" >
+| 	< IF: "if" >
 | 	< ELSE: "else" >
 | 	< WHILE: "while" >
 | 	< TRUE: "true" >
 | 	< FALSE: "false" >
 | 	< STATIC: "static" >
-}
-
-TOKEN : /* */
-{	< EXTENDS: "extends" >
+| 	< EXTENDS: "extends" >
 | 	< RETURN: "return" >
 | 	< PUBLIC: "public" >
 | 	< VOID: "void" >
 | 	< MAIN: "main" >
-}
-
-TOKEN : /* METHODS */
-{	< PRINT: "System.out.println" >
+| 	< PRINT: "System.out.println" >
 | 	< LENGTH: "length" >
 | 	< NEW: "new" >
-}
-
-TOKEN :
-{   < INTLIT: ( <NUMERO> )+ >
+|   < INT_LITERAL: ( <NUMERO> )+ >
 |	< IDENTIFIER: <LETRAS> ( <LETRAS> | <NUMERO> )*>
 | 	< #LETRAS: ["a" - "z", "A"-"Z", "_"] >
 |   < #NUMERO: ["0" - "9"] >
@@ -403,7 +385,7 @@ void Expression() : {/*@bgen(jjtree) Expression */
 {/*@bgen(jjtree) Expression */
    try {
 /*@egen*/
-   <INTLIT> Elinha()
+   <INT_LITERAL> Elinha()
   | <TRUE> Elinha()
   | <FALSE> Elinha()
   | <IDENTIFIER> Elinha()

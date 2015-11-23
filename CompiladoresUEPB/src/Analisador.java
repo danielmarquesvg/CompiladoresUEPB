@@ -501,7 +501,7 @@ public class Analisador/*@bgen(jjtree)*/implements AnalisadorTreeConstants, Anal
           case TRUE:
           case FALSE:
           case NEW:
-          case INTLIT:
+          case INT_LITERAL:
           case IDENTIFIER:
             Expression();
             label_8:
@@ -565,8 +565,8 @@ public class Analisador/*@bgen(jjtree)*/implements AnalisadorTreeConstants, Anal
   jjtree.openNodeScope(jjtn000);
     try {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
-      case INTLIT:
-        jj_consume_token(INTLIT);
+      case INT_LITERAL:
+        jj_consume_token(INT_LITERAL);
         Elinha();
         break;
       case TRUE:

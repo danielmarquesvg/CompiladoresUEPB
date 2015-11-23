@@ -83,7 +83,7 @@ public interface AnalisadorConstants {
   /** RegularExpression Id. */
   int NEW = 44;
   /** RegularExpression Id. */
-  int INTLIT = 45;
+  int INT_LITERAL = 45;
   /** RegularExpression Id. */
   int IDENTIFIER = 46;
   /** RegularExpression Id. */
@@ -143,7 +143,7 @@ public interface AnalisadorConstants {
     "\"System.out.println\"",
     "\"length\"",
     "\"new\"",
-    "<INTLIT>",
+    "<INT_LITERAL>",
     "<IDENTIFIER>",
     "<LETRAS>",
     "<NUMERO>",
