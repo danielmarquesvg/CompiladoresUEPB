@@ -2,7 +2,8 @@
 options {
   JDK_VERSION = "1.5";
   STATIC = false;
- // DEBUG_PARSER = true;  //habilite para  acompanhar a analise
+  VISITOR = true;
+  VISITOR_DATA_TYPE = true; // (default "Object")
 }
 
 PARSER_BEGIN(Analisador) 
