@@ -1,12 +1,98 @@
 package visitor;
 
-import modulos.ElementoTerminal;
+import sintaxe.Abre_Colchete;
+import sintaxe.Abre_Parenteses;
+import sintaxe.And;
+import sintaxe.Asterisco;
+import sintaxe.Boolean;
+import sintaxe.Class;
+import sintaxe.ClassDeclaration;
+import sintaxe.Elinha;
+import sintaxe.Else;
+import sintaxe.Expression;
+import sintaxe.Extends;
+import sintaxe.False;
+import sintaxe.Fecha_Colchete;
+import sintaxe.Fecha_Parenteses;
+import sintaxe.Goal;
+import sintaxe.Identifier;
+import sintaxe.If;
+import sintaxe.Igual;
+import sintaxe.Int;
+import sintaxe.Int_Literal;
+import sintaxe.Length;
+import sintaxe.Letras;
+import sintaxe.Main;
+import sintaxe.MainClass;
+import sintaxe.Mais;
+import sintaxe.Menor;
+import sintaxe.Menos;
+import sintaxe.MethodDeclaration;
+import sintaxe.Nao;
+import sintaxe.New;
+import sintaxe.Numero;
+import sintaxe.Ponto;
+import sintaxe.PontoVirgula;
+import sintaxe.Print;
+import sintaxe.Public;
+import sintaxe.Return;
+import sintaxe.Statement;
+import sintaxe.Static;
+import sintaxe.String;
+import sintaxe.This;
+import sintaxe.True;
+import sintaxe.Type;
+import sintaxe.VarDeclaration;
+import sintaxe.Virgula;
+import sintaxe.While;
 
-public class Visitor {
-
-	public void visitaElemTerminal(ElementoTerminal elementoTerminal) {
-		// TODO Auto-generated method stub
-		
-	}
-
+public interface Visitor {
+	
+	 public void visit(Abre_Colchete _abre_colchete);
+	 public void visit(Abre_Parenteses _abre_parenteses);
+	 public void visit(And _and);
+	 public void visit(Asterisco _asterisco);
+	 public void visit(Boolean _boolean);
+	 public void visit(Class _class);
+	 public void visit(ClassDeclaration _classDeclaration);
+	 public void visit(Elinha _elinha);
+	 public void visit(Else _else);
+	 public void visit(Expression _expression);
+	 public void visit(Extends _extends);
+	 public void visit(False _false);
+	 public void visit(Fecha_Colchete _fecha_colchete);
+	 public void visit(Fecha_Parenteses _fecha_parenteses);
+	 public void visit(Goal _goal);
+	 public void visit(Identifier _identifier);
+	 public void visit(If _if);
+	 public void visit(Igual _igual);
+	 public void visit(Int_Literal _int_literal);
+	 public void visit(Int _int);
+	 public void visit(Length _length);
+	 public void visit(Letras _letras);
+	 public void visit(Main _main);
+	 public void visit(MainClass _mainClass);
+	 public void visit(Mais _mais);
+	 public void visit(Menor _menor);
+	 public void visit(Menos _menos);
+	 public void visit(MethodDeclaration _methodDeclaration);
+	 public void visit(Nao _nao);
+	 public void visit(New _new);
+	 public void visit(Numero _numero);
+	 public void visit(Ponto _ponto);
+	 public void visit(PontoVirgula _pontoVirgula);
+	 public void visit(Print _print);
+	 public void visit(Public _public);
+	 public void visit(Return _return);
+	 public void visit(Statement _statement);
+	 public void visit(Static _static);
+	 public void visit(String _string);
+	 public void visit(This _this);
+	 public void visit(True _true);
+	 public void visit(Type _type);
+	 public void visit(VarDeclaration _varDeclaration);
+	 public void visit(Virgula _virgula);
+	 public void visit(Void _void);
+	 public void visit(While _while);
+	 
 }
