@@ -1,5 +1,11 @@
 package sintaxe;
 
-public class Statement {
+import visitor.Visitor;
+import visitor.TypeVisitor;
 
+public abstract class Statement {
+	
+  public abstract void accept(Visitor visitor);
+  public abstract Type accept(TypeVisitor visitor);
+  
 }

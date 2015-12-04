@@ -1,5 +1,12 @@
 package sintaxe;
 
-public class ClassDeclaration {
+import visitor.Visitor;
+import visitor.TypeVisitor;
 
+public abstract class ClassDeclaration {
+
+	  public abstract void accept(Visitor visitor);
+	  public abstract Type accept(TypeVisitor visitor);
+	  
 }
+
