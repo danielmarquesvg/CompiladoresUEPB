@@ -1,0 +1,14 @@
+/Analisador.java
+/Analisador.jj
+/AnalisadorConstants.java
+/AnalisadorTokenManager.java
+/AnalisadorTreeConstants.java
+/AnalisadorVisitor.java
+/JJTAnalisadorState.java
+/Node.java
+/ParseException.java
+/SimpleCharStream.java
+/SimpleNode.java
+/Token.java
+/TokenMgrError.java
+/sintaxe/
