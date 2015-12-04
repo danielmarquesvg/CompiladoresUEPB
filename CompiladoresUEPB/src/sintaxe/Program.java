@@ -5,9 +5,9 @@ import visitor.TypeVisitor;
 
 public class Program {
   public MainClass mainClass;
-  public ClassDeclList classDecList;
+  public ClassDeclarationList classDecList;
 
-  public Program(MainClass mainClass, ClassDeclList classDecList) {
+  public Program(MainClass mainClass, ClassDeclarationList classDecList) {
     this.mainClass = mainClass; this.classDecList = classDecList; 
   }
 

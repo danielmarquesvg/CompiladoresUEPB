@@ -3,7 +3,7 @@ package sintaxe;
 import visitor.Visitor;
 import visitor.TypeVisitor;
 
-public class Minus extends Exp {
+public class Minus extends Expression {
 	
 	public Expression expression1, expression2;
 

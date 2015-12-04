@@ -2,7 +2,7 @@ package sintaxe;
 import visitor.Visitor;
 import visitor.TypeVisitor;
 
-}public class And extends Expression {
+public class And extends Expression {
 	  public Expression expression1, expression2;
 	  
 	  public And(Expression expression1, Expression expression2) { 

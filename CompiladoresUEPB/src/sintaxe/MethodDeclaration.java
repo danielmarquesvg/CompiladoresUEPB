@@ -7,11 +7,11 @@ public class MethodDeclaration {
   public Type type;
   public Identifier identifier;
   public FormalList formaList;
-  public VarDeclList varDeclaLis;
+  public VarDeclarationList varDeclaLis;
   public StatementList statementList;
   public Expression expression;
 
-  public MethodDeclaration (Type type, Identifier identifier, FormalList formaList, VarDeclList varDeclaLis, StatementList asl, Expression expression) {
+  public MethodDeclaration (Type type, Identifier identifier, FormalList formaList, VarDeclarationList varDeclaLis, StatementList asl, Expression expression) {
     this.type = type; this.identifier = identifier; this.formaList = formaList; this.varDeclaLis = varDeclaLis; this.statementList = statementList; this.expression = expression;
   }
  
