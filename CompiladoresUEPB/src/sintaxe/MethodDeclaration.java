@@ -11,7 +11,7 @@ public class MethodDeclaration {
   public StatementList statementList;
   public Expression expression;
 
-  public MethodDeclaration (Type type, Identifier identifier, FormalList afl, VarDeclList avl, StatementList asl, Expression expression) {
+  public MethodDeclaration (Type type, Identifier identifier, FormalList formaList, VarDeclList varDeclaLis, StatementList asl, Expression expression) {
     this.type = type; this.identifier = identifier; this.formaList = formaList; this.varDeclaLis = varDeclaLis; this.statementList = statementList; this.expression = expression;
   }
  
