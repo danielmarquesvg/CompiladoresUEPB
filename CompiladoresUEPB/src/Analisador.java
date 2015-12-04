@@ -48,7 +48,7 @@ public class Analisador/*@bgen(jjtree)*/implements AnalisadorTreeConstants, Anal
       while (true) {
         switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
         case CLASS:
-          
+          ;
           break;
         default:
           jj_la1[0] = jj_gen;

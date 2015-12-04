@@ -11,4 +11,8 @@
 /SimpleNode.java
 /Token.java
 /TokenMgrError.java
+/.gitignore
+/Analisador.jjt
+/main/
 /sintaxe/
+/visitor/

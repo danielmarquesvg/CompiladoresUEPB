@@ -4,9 +4,9 @@ import visitor.Visitor;
 import visitor.TypeVisitor;
 
 public class Identifier {
-  public String string;
+  public java.lang.String string;
 
-  public Identifier(String string) { 
+  public Identifier(java.lang.String string) { 
     this.string=string;
   }
 
@@ -18,7 +18,7 @@ public class Identifier {
     return visitor.visit(this);
   }
 
-  public String toString(){
-    return this.string;
+  public java.lang.String toString(){
+    return string;
   }
 }
