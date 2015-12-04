@@ -4,18 +4,32 @@ import visitor.Visitor;
 import visitor.TypeVisitor;
 
 public class Program {
+	
   public MainClass mainClass;
-  public ClassDeclarationList classDecList;
+  public ClassDeclarationList classDeclarationList;
 
-  public Program(MainClass mainClass, ClassDeclarationList classDecList) {
-    this.mainClass = mainClass; this.classDecList = classDecList; 
+  public Program(MainClass mainClass, ClassDeclarationList classDeclarationList) {
+    this.mainClass = mainClass;
   }
 
   public void accept(Visitor visitor) {
     visitor.visit(this);
   }
 
-  public Type accept(TypeVisitor visitor) {
-    return visitor.visit(this);
+  public Type accept(TypeVisitor typeVisitor) {
+    return typeVisitor.visit(this);
   }
+  
+  /*
+  public Table accept(ImperativeSymbolTableVisitor v)
+  {
+	  return v.visit(this);
+  }
+  
+  public translate.Exp accept(TreeIRVisitor v) {
+		return v.visit(this);
+		// TODO Auto-generated method stub
+		
+	}
+	*/
 }

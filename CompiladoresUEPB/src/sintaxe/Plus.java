@@ -3,10 +3,10 @@ package sintaxe;
 import visitor.Visitor;
 import visitor.TypeVisitor;
 
-public class Mais extends Expression {
+public class Plus extends Expression {
   public Expression expression1,expression2;
   
-  public Mais(Expression expression1, Expression expression2) { 
+  public Plus(Expression expression1, Expression expression2) { 
     this.expression1 = expression1; this.expression2 = expression2;
   }
 

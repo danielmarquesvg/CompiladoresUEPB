@@ -2,7 +2,7 @@ package sintaxe;
 import visitor.Visitor;
 import visitor.TypeVisitor;
 
-public class Boolean extends Type {
+public class BooleanType extends Type {
 	  public void accept(Visitor visitor) {
 	    visitor.visit(this);
 	  }

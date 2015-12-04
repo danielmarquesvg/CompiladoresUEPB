@@ -8,7 +8,9 @@ public class If extends Statement {
   public Statement statement1,statement2;
 
   public If(Expression expression, Statement statement1, Statement statement2) {
-    this.expression = expression; this.statement1 = statement1; this.statement2 = statement2;
+    this.expression = expression;
+    this.statement1 = statement1;
+    this.statement2 = statement2;
   }
 
   public void accept(Visitor visitor) {

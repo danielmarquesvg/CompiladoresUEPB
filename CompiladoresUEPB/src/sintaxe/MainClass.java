@@ -8,7 +8,9 @@ public class MainClass {
   public Statement statement;
 
   public MainClass(Identifier identifier1, Identifier identifier2, Statement statement) {
-    this.identifier1 = identifier1; this.identifier2 = identifier2; this.statement = statement;
+    this.identifier1 = identifier1;
+    this.identifier2 = identifier2;
+    this.statement = statement;
   }
 
   public void accept(Visitor visitor) {

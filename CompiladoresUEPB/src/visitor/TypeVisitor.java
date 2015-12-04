@@ -1,102 +1,89 @@
 package visitor;
 
-import sintaxe.Abre_Colchete;
-import sintaxe.Abre_Parenteses;
 import sintaxe.And;
-import sintaxe.Asterisco;
-import sintaxe.Boolean;
+
+import sintaxe.BooleanType;
 import sintaxe.Class;
 import sintaxe.ClassDeclaration;
 import sintaxe.Elinha;
 import sintaxe.Else;
 import sintaxe.Expression;
-import sintaxe.Extends;
+
 import sintaxe.False;
-import sintaxe.Fecha_Colchete;
-import sintaxe.Fecha_Parenteses;
+
 import sintaxe.Formal;
-import sintaxe.Goal;
+
 import sintaxe.Identifier;
 import sintaxe.If;
-import sintaxe.Igual;
-import sintaxe.Int;
-import sintaxe.Int_Literal;
+
 import sintaxe.Length;
-import sintaxe.Letras;
-import sintaxe.Main;
+
+
 import sintaxe.MainClass;
-import sintaxe.Mais;
-import sintaxe.Menor;
-import sintaxe.Menos;
+import sintaxe.Plus;
+
 import sintaxe.MethodDeclaration;
-import sintaxe.Nao;
-import sintaxe.New;
-import sintaxe.Numero;
-import sintaxe.Ponto;
-import sintaxe.PontoVirgula;
+
 import sintaxe.Print;
 import sintaxe.Program;
-import sintaxe.Public;
-import sintaxe.Return;
+
 import sintaxe.Statement;
-import sintaxe.Static;
-import sintaxe.String;
+
 import sintaxe.This;
 import sintaxe.True;
 import sintaxe.Type;
 import sintaxe.VarDeclaration;
-import sintaxe.Virgula;
+
 import sintaxe.While;
 
 public interface TypeVisitor {
-		
-		 public Type visit(Abre_Colchete _abre_colchete);
-		 public Type visit(Abre_Parenteses _abre_parenteses);
-		 public Type visit(And _and);
-		 public Type visit(Asterisco _asterisco);
-		 public Type visit(Boolean _boolean);
-		 public Type visit(Class _class);
-		 public Type visit(ClassDeclaration _classDeclaration);
-		 public Type visit(Elinha _elinha);
-		 public Type visit(Else _else);
-		 public Type visit(Expression _expression);
-		 public Type visit(Extends _extends);
-		 public Type visit(Formal _formal);
-		 public Type visit(False _false);
-		 public Type visit(Fecha_Colchete _fecha_colchete);
-		 public Type visit(Fecha_Parenteses _fecha_parenteses);
-		 public Type visit(Goal _goal);
-		 public Type visit(Identifier _identifier);
-		 public Type visit(If _if);
-		 public Type visit(Igual _igual);
-		 public Type visit(Int_Literal _int_literal);
-		 public Type visit(Int _int);
-		 public Type visit(Length _length);
-		 public Type visit(Letras _letras);
-		 public Type visit(Main _main);
-		 public Type visit(MainClass _mainClass);
-		 public Type visit(Mais _mais);
-		 public Type visit(Menor _menor);
-		 public Type visit(Menos _menos);
-		 public Type visit(MethodDeclaration _methodDeclaration);
-		 public Type visit(Nao _nao);
-		 public Type visit(New _new);
-		 public Type visit(Numero _numero);
-		 public Type visit(Program _program);
-		 public Type visit(Ponto _ponto);
-		 public Type visit(PontoVirgula _pontoVirgula);
-		 public Type visit(Print _print);
-		 public Type visit(Public _public);
-		 public Type visit(Return _return);
-		 public Type visit(Statement _statement);
-		 public Type visit(Static _static);
-		 public Type visit(String _string);
-		 public Type visit(This _this);
-		 public Type visit(True _true);
-		 public Type visit(Type _type);
-		 public Type visit(VarDeclaration _varDeclaration);
-		 public Type visit(Virgula _virgula);
-		 public Type visit(Void _void);
-		 public Type visit(While _while);
-		 
-	}
+
+	public Type visit(And _and);
+
+	public Type visit(BooleanType _boolean);
+
+	public Type visit(Class _class);
+
+	public Type visit(ClassDeclaration _classDeclaration);
+
+	public Type visit(Elinha _elinha);
+
+	public Type visit(Else _else);
+
+	public Type visit(Expression _expression);
+
+	public Type visit(Formal _formal);
+
+	public Type visit(False _false);
+
+	public Type visit(Identifier _identifier);
+
+	public Type visit(If _if);
+
+	public Type visit(Length _length);
+
+	public Type visit(MainClass _mainClass);
+
+	public Type visit(Plus _mais);
+
+	public Type visit(MethodDeclaration _methodDeclaration);
+
+	public Type visit(Program _program);
+
+	public Type visit(Print _print);
+
+	public Type visit(Statement _statement);
+
+	public Type visit(This _this);
+
+	public Type visit(True _true);
+
+	public Type visit(Type _type);
+
+	public Type visit(VarDeclaration _varDeclaration);
+
+	public Type visit(Void _void);
+
+	public Type visit(While _while);
+
+}
