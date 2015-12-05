@@ -10,6 +10,7 @@ public class Program {
 
   public Program(MainClass mainClass, ClassDeclarationList classDeclarationList) {
     this.mainClass = mainClass;
+    this.classDeclarationList = classDeclarationList;
   }
 
   public void accept(Visitor visitor) {
