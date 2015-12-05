@@ -1,84 +1,77 @@
 package visitor;
 
-
 import sintaxe.And;
-
+import sintaxe.ArrayAssign;
+import sintaxe.ArrayLength;
+import sintaxe.ArrayLookup;
+import sintaxe.Assign;
+import sintaxe.Block;
 import sintaxe.BooleanType;
-import sintaxe.Class;
-import sintaxe.ClassDeclaration;
-import sintaxe.Elinha;
-import sintaxe.Else;
-import sintaxe.Expression;
-
+import sintaxe.Call;
+import sintaxe.ClassDeclarationExtends;
+import sintaxe.ClassDeclarationSimple;
 import sintaxe.False;
-
 import sintaxe.Formal;
-
 import sintaxe.Identifier;
+import sintaxe.IdentifierExpression;
+import sintaxe.IdentifierType;
 import sintaxe.If;
-
-
-import sintaxe.Length;
-
-
+import sintaxe.IntArrayType;
+import sintaxe.IntegerLiteral;
+import sintaxe.IntegerType;
+import sintaxe.LessThan;
 import sintaxe.MainClass;
-import sintaxe.Plus;
-
 import sintaxe.MethodDeclaration;
-
+import sintaxe.Minus;
+import sintaxe.NewArray;
+import sintaxe.NewObject;
+import sintaxe.Not;
+import sintaxe.Plus;
 import sintaxe.Print;
 import sintaxe.Program;
-
-import sintaxe.Statement;
-
 import sintaxe.This;
+import sintaxe.Times;
 import sintaxe.True;
-import sintaxe.Type;
 import sintaxe.VarDeclaration;
-
 import sintaxe.While;
+
 
 public interface Visitor {
 	
 
-	 public void visit(And _and);
-
-	 public void visit(BooleanType _boolean);
-	 public void visit(Class _class);
-	 public void visit(ClassDeclaration _classDeclaration);
-	 public void visit(Elinha _elinha);
-	 public void visit(Else _else);
-	 public void visit(Expression _expression);
-
-	 public void visit(Formal _formal);
-	 public void visit(False _false);
-
-
-	 public void visit(Identifier _identifier);
-	 public void visit(If _if);
-
-
-	 public void visit(Length _length);
-
-
-	 public void visit(MainClass _mainClass);
-	 public void visit(Plus _mais);
-
-	 public void visit(MethodDeclaration _methodDeclaration);
-
-
-	 public void visit(Program _program);
-
-	 public void visit(Print _print);
-
-	 public void visit(Statement _statement);
-
-	 public void visit(This _this);
-	 public void visit(True _true);
-	 public void visit(Type _type);
-	 public void visit(VarDeclaration _varDeclaration);
-
-	 public void visit(Void _void);
-	 public void visit(While _while);
+	 public void visit(Program program);
+	  public void visit(MainClass mainClass);
+	  public void visit(ClassDeclarationSimple classDeclarationSimple);
+	  public void visit(ClassDeclarationExtends classDeclarationExtends);
+	  public void visit(VarDeclaration varDeclaration);
+	  public void visit(MethodDeclaration methodDeclaration);
+	  public void visit(Formal formal);
+	  public void visit(IntArrayType intArrayType);
+	  public void visit(BooleanType booleanType);
+	  public void visit(IntegerType integerType);
+	  public void visit(IdentifierType identifierType);
+	  public void visit(Block block);
+	  public void visit(If if_);
+	  public void visit(While while_);
+	  public void visit(Print print);
+	  public void visit(Assign assign);
+	  public void visit(ArrayAssign arrayAssign);
+	  public void visit(And and);
+	  public void visit(LessThan lessThan);
+	  public void visit(Plus plus);
+	  public void visit(Minus minus);
+	  public void visit(Times times);
+	  public void visit(ArrayLookup arrayLookup);
+	  public void visit(ArrayLength arrayLength);
+	  public void visit(Call call);
+	  public void visit(IntegerLiteral integerLiteral);
+	  public void visit(True true_);
+	  public void visit(False false_);
+	  public void visit(IdentifierExpression identifierExpression);
+	  public void visit(This this_);
+	  public void visit(NewArray newArray);
+	  public void visit(NewObject newObject);
+	  public void visit(Not not);
+	  public void visit(Identifier identifier);
 	 
 }
