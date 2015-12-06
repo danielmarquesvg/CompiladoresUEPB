@@ -4,8 +4,8 @@ public class Analisador/*@bgen(jjtree)*/implements AnalisadorTreeConstants, Anal
   }
 
 /** Producao inicial. */
-  final public void Start() throws ParseException {
-                /*@bgen(jjtree) Start */
+  final public SimpleNode Start() throws ParseException {
+                      /*@bgen(jjtree) Start */
   SimpleNode jjtn000 = new SimpleNode(JJTSTART);
   boolean jjtc000 = true;
   jjtree.openNodeScope(jjtn000);
@@ -33,6 +33,7 @@ public class Analisador/*@bgen(jjtree)*/implements AnalisadorTreeConstants, Anal
       jjtree.closeNodeScope(jjtn000, true);
     }
     }
+    throw new Error("Missing return statement in function");
   }
 
   final public void Goal() throws ParseException {

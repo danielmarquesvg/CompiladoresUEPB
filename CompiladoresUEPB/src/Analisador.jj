@@ -82,7 +82,7 @@ TOKEN :
 
 
 /** Producao inicial. */
-void Start() : {/*@bgen(jjtree) Start */
+SimpleNode Start() : {/*@bgen(jjtree) Start */
   SimpleNode jjtn000 = new SimpleNode(JJTSTART);
   boolean jjtc000 = true;
   jjtree.openNodeScope(jjtn000);

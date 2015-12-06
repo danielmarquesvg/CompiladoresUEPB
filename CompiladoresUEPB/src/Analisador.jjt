@@ -78,7 +78,7 @@ TOKEN :
 
 
 /** Producao inicial. */
-void Start() : {}
+SimpleNode Start() : {}
 {
   Goal()
   { return jjtThis; }
