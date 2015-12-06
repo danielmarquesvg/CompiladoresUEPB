@@ -8,8 +8,8 @@ public class Analisador implements AnalisadorConstants {
 /** Producao inicial. */
   final public void Start() throws ParseException {
     Goal();
-    {Object jjtThis = null;
-	if (true) return jjtThis ;}
+    {
+	if (true) return ;}
   }
 
   final public void Goal() throws ParseException {
