@@ -4,7 +4,8 @@ options {
   JDK_VERSION = "1.5";
   STATIC = false;
                  
-                            // (default "Object")
+                            // (default "Object").
+  
 }
 
 PARSER_BEGIN(Analisador) 
